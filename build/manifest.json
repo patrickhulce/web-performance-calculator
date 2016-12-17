@@ -1,0 +1,16 @@
+{
+  "name": "Web Performance Calculator",
+  "short_name": "WebPerf",
+  "orientation": "portrait",
+  "theme_color": "hsl(200, 100%, 70%)",
+  "background_color": "hsl(230, 100%, 40%)",
+  "display": "fullscreen",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/icons/calculator.png",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    }
+  ]
+}

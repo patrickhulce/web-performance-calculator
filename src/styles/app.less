@@ -1,0 +1,57 @@
+@import '~skeleton-css/css/normalize.css';
+@import '~skeleton-css/css/skeleton.css';
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+@gray: #ccc;
+@light-gray: #ececec;
+
+html, body, #react-root, .container--primary {
+  height: 100%;
+}
+
+.container--primary {
+  padding-top: 20px;
+}
+
+.header {
+  text-align: center;
+  border-bottom: 1px solid @light-gray;
+  margin-bottom: 20px;
+}
+
+.hidden-xs {
+  @media (max-width: 500px) {
+    display: none;
+  }
+}
+
+.options {
+  padding-bottom: 20px;
+
+  input {
+    max-width: 100%;
+  }
+
+  .quick-option {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    padding: 5px 10px;
+    margin-bottom: 5px;
+
+    &:hover {
+      background: #efefef;
+      cursor: pointer;
+    }
+
+    .network {
+      float: right;
+      color: hsl(200, 100%, 70%);
+    }
+  }
+}
+
+.timings {
+  border-top: 1px solid @light-gray;
+  padding-top: 20px;
+}
