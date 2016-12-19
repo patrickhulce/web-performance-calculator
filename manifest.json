@@ -4,8 +4,8 @@
   "orientation": "portrait",
   "theme_color": "hsl(200, 100%, 70%)",
   "background_color": "hsl(230, 100%, 40%)",
-  "display": "fullscreen",
-  "start_url": "/",
+  "display": "standalone",
+  "start_url": "index.html",
   "icons": [
     {
       "src": "/icons/calculator.png",
