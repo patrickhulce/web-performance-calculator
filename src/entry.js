@@ -4,7 +4,7 @@ import './sw/register.js'
 
 import React from 'react'
 import ReactDOM from 'react-dom'
-import {Router, browserHistory, hashHistory} from 'react-router'
+import {Router, hashHistory} from 'react-router'
 import {Provider} from 'react-redux'
 import {syncHistoryWithStore} from 'react-router-redux'
 
@@ -15,8 +15,7 @@ const reactRoot = document.getElementById('react-root')
 
 function renderApp() {
   const routes = require('./routes').default(store)
-  const history = __DEV__ ? hashHistory : browserHistory
-  const syncedHistory = syncHistoryWithStore(history, store)
+  const syncedHistory = syncHistoryWithStore(hashHistory, store)
 
   ReactDOM.render(
     <Provider store={store}>
